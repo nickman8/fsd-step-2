@@ -1,0 +1,12 @@
+extends ../templates/_template.pug
+include ../mixins/colors/color.pug
+
+
+block content
+		.sides
+			.sides__right
+				each val in [100,75,50,25,5]
+					+makeColorBlock("color-"+val, "Dark Shade "+val+"%", "#1F2041")
+				+makeColorBlock("color-6", "Purple", "#BC9CFF")
+				+makeColorBlock("color-7", "Green", "#6FCF97")
+			.sides__left

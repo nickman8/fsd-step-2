@@ -1,0 +1,48 @@
+.sides{
+    margin-left: 150px;
+    margin-top: 145px;
+}
+
+.color-block{
+    display: flex;
+    margin-bottom: 20px;
+    &__square{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+    };
+    &__main-title,
+    &__sub-title{
+        font-style: normal;        
+        font-size: 19px;
+        line-height: 29px;
+        color:$dc100;
+        margin-left: 40px;
+    };
+    &__main-title{
+        font-weight: bold;
+    }
+
+}
+
+.color-100{
+    background: $dc100;
+}
+.color-75{
+    background: $dc75;
+}
+.color-50{
+    background: $dc50;
+}
+.color-25{
+    background: $dc25;
+}
+.color-5{
+    background: $dc5;
+}
+.color-6{
+    background: $purple;
+}
+.color-7{
+    background: $green;
+}
