@@ -5,8 +5,8 @@ mixin makeColorBlock(color,title,subtitle)
 			.color-block__main-title= title
 			.color-block__sub-title= subtitle
 	
-mixin makeTitles(title,titlesize,text,tag)
-	.side__element.side__element_mg
+mixin makeTitles(title,titlesize,text,tag,first)
+	.side__element(class = first ? "": "side__element_mg")
 		.side__left
 			span.title(class = titlesize)= title
 		.side__right
@@ -18,4 +18,4 @@ mixin makeTitles(title,titlesize,text,tag)
 				if tag == "h3"
 					h3.side__right_decoration=text
 				if tag == "body"
-					span=text
+					span.side__right_span=text

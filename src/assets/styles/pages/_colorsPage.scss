@@ -1,12 +1,12 @@
 .sides {
   display: flex;
-  margin-left: 150px;
-  margin-top: 67px;
+  margin-left: 149px;
+  
   
 
   &__left {
     margin-left: 435px;
-    width: 454px;
+    width: 400px;
   }
 
 
@@ -27,6 +27,14 @@
       &_decoration{
         text-transform: uppercase; 
       }
+      &_span{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75)
+      }
   }
 
   &__element {
@@ -35,6 +43,7 @@
 
     &_mg {
       margin-top: 50px;
+
     }
   }
 
@@ -83,6 +92,10 @@
   }
 
   ;
+
+  &__titles{
+    padding-top: 9px;
+  }
 
   &__main-title,
   &__sub-title {
