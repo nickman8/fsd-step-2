@@ -1,7 +1,21 @@
 mixin makeColorBlock(color,title,subtitle)  
-    .color-block
-        .color-block__square(class = color)
-        .color-block__titles
-            .color-block__main-title= title
-            .color-block__sub-title= subtitle
-    
+	.color-block
+		.color-block__square(class = color)
+		.color-block__titles
+			.color-block__main-title= title
+			.color-block__sub-title= subtitle
+	
+mixin makeTitles(title,titlesize,text,tag)
+	.side__element.side__element_mg
+		.side__left
+			span.title(class = titlesize)= title
+		.side__right
+			.side__right_wrapper 
+				if tag == "h1"
+					h1=text
+				if tag == "h2"
+					h2=text
+				if tag == "h3"
+					h3.side__right_decoration=text
+				if tag == "body"
+					span=text

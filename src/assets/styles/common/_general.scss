@@ -10,7 +10,7 @@ body {
   
 }
 body {
-  @include container(1200);
+  @include container(1440);
   font-family: $quicksand;
   // background: $darkslategray;
 }
@@ -34,4 +34,16 @@ ul {
 }
 li {
   list-style: none;
+}
+
+h1{  
+  @include fontMaker(24px,30px)
+}
+
+h2{
+  @include fontMaker(19px,24px)
+}
+
+h3{
+  @include fontMaker(12px,15px)
 }

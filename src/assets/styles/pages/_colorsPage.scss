@@ -1,48 +1,130 @@
-.sides{
-    margin-left: 150px;
-    margin-top: 145px;
+.sides {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 67px;
+  
+
+  &__left {
+    margin-left: 435px;
+    width: 454px;
+  }
+
+
+
+  &__right{
+    flex-shrink: 0;
+  }
+
 }
 
-.color-block{
+
+
+
+.side {
+  &__right{
     display: flex;
-    margin-bottom: 20px;
-    &__square{
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-    };
-    &__main-title,
-    &__sub-title{
-        font-style: normal;        
-        font-size: 19px;
-        line-height: 29px;
-        color:$dc100;
-        margin-left: 40px;
-    };
-    &__main-title{
-        font-weight: bold;
+    justify-content: flex-start;
+      &_decoration{
+        text-transform: uppercase; 
+      }
+  }
+
+  &__element {
+    display: flex;
+    
+
+    &_mg {
+      margin-top: 50px;
     }
+  }
+
+  &__right_wrapper {
+    margin-left: 30px;
+  }
+
+  &__left {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(31, 32, 65, 0.25);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0.05
+    
+  }
 
 }
 
-.color-100{
-    background: $dc100;
+.title_h1{
+    font-size: 24px;
 }
-.color-75{
-    background: $dc75;
+.title_h2{
+    font-size: 19px;
 }
-.color-50{
-    background: $dc50;
+.title_h3{
+    font-size: 12px;
 }
-.color-25{
-    background: $dc25;
+.title_body{
+    font-size: 14px;
 }
-.color-5{
-    background: $dc5;
+
+
+.color-block {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__square {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+  }
+
+  ;
+
+  &__main-title,
+  &__sub-title {
+    font-style: normal;
+    font-size: 19px;
+    line-height: 29px;
+    color: $dc100;
+    margin-left: 40px;
+  }
+
+  ;
+
+  &__main-title {
+    font-weight: bold;
+  }
+
 }
-.color-6{
-    background: $purple;
+
+.color-100 {
+  background: $dc100;
 }
-.color-7{
-    background: $green;
+
+.color-75 {
+  background: $dc75;
+}
+
+.color-50 {
+  background: $dc50;
+}
+
+.color-25 {
+  background: $dc25;
+}
+
+.color-5 {
+  background: $dc5;
+}
+
+.color-6 {
+  background: $purple;
+}
+
+.color-7 {
+  background: $green;
 }

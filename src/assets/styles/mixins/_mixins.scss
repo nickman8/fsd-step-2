@@ -28,3 +28,11 @@ $green: #6FCF97;
   margin: $margin;
   padding: $padding;
 }
+
+@mixin fontMaker ($size, $height){
+  font-style: normal;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $height;
+  color: #1F2041;
+}
