@@ -1,6 +1,8 @@
 @import "../../../assets/styles/mixins/mixins";
 
-
+.plus_mg{
+    margin-left: 15px;
+}
 
 .header-menu{
     display: flex;
@@ -19,6 +21,7 @@
         margin-right: 44px; 
         display: flex;        
         align-items:center;
+        
         &-item{
             font-family: Montserrat;
             font-style: normal;            
@@ -27,6 +30,19 @@
             margin-right: 20px;
             font-weight: normal;
             color: rgba(31, 32, 65, 0.5);
+            position: relative;
+            &:nth-child(2):after,
+            &:nth-child(5):after    {
+                content: "";
+                margin-left: 5px;               
+                border: solid ;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+                position: absolute;
+                margin-top: 2px;                
+                transform: rotate(45deg);
+            }
         }
     }
     &__logo{
