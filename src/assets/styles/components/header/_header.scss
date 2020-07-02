@@ -1,17 +1,4 @@
-@import "../../mixins/_mixins";
 
-.header{
-
-    &__nav{
-        @include isFlex() ;
-        justify-content: space-between;
-    }
-    &__link-list{
-        @include isFlex();
-        justify-content: space-between;
-
-    }
-}
 
 
 

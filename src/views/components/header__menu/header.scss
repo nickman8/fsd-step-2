@@ -1,0 +1,78 @@
+@import "../../../assets/styles/mixins/mixins";
+
+
+
+.header-menu{
+    display: flex;
+    width: 1440px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    padding-right: 140px;
+    padding-left: 140px;
+    &__nav{
+        display: flex;
+        
+    }
+    &__list{
+        margin-left: 284px;
+        margin-right: 44px; 
+        display: flex;        
+        align-items:center;
+        &-item{
+            font-family: Montserrat;
+            font-style: normal;            
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 20px;
+            font-weight: normal;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+    &__logo{
+        display: flex;        
+    }
+    &__title{
+        margin-left: 12.5px;
+    }
+    &__button-group{
+        display: flex;
+        align-items:center;
+    }
+
+    &__button{
+        
+        &-white{
+            margin-right: 20px;
+            width: 87px;
+            height: 34px;
+            border-radius: 22px;            
+            background:white;
+            color: $purple;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;            
+            border:2px solid #bc9cff;
+            
+
+
+text-transform: uppercase;
+        }
+        &-blue{
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            width: 196px;
+            height: 34px;
+            color: #FFFFFF;
+            border: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+    }
+}

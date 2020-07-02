@@ -37,4 +37,8 @@
 /*
   Templates
 */
-@import "./templates/template.scss"
+@import "./templates/template.scss";
+
+// Components
+@import "../../views/components/header__menu/header.scss"
+
