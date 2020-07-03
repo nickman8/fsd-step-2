@@ -1,4 +1,9 @@
 extends ../templates/_template.pug
+include ../components/header__menu/header.pug
 
-block content
-    include ../components/header__menu/header.pug
+block content    
+    .container
+        .menu
+            +menu(false)
+        .menu   
+            +menu(true)
