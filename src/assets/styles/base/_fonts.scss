@@ -5,9 +5,9 @@
 */
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: "OpenSans";
   font-weight: 700;
-  src: url("@~fonts/Quicksand-Bold.woff");
+  src: url("@~fonts/OpenSans-Bold.woff");
 }
 
 @font-face {
@@ -17,15 +17,15 @@
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: "OpenSans";
   font-weight: 400;
-  src: url("@~fonts/Quicksand-Regular.woff");
+  src: url("@~fonts/OpenSans-Regular.woff");
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: "OpenSans";
   font-weight: 300;
-  src: url("@~fonts/Quicksand-Light.woff");
+  src: url("@~fonts/OpenSans-Light.woff");
 }
 
 @font-face {
@@ -45,5 +45,5 @@
   color: rgba(31, 32, 65, 0.75)!important;
 }
 
-$quicksand: "Quicksand", sans-serif;
+$quicksand: "OpenSans", sans-serif;
 $montserrat:  "Montserrat", sans-serif

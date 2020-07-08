@@ -1,10 +1,12 @@
 
+//- мб надо вынести в отдельный
+include ../../mixins/header.pug
+
+
 //- autr - авторизован ли пользователь
 mixin menu(autr)
     .header-menu
-        .header-menu__logo
-            img.header-menu__logo(src="../../../assets/images/header__menu/logo.svg", alt="")
-            img.header-menu__title(src="../../../assets/images/header__menu/logo_title.svg", alt="")
+        +logo
         .header-menu__nav
             ul.header-menu__list(class = autr ? "header-menu__user_move-right": "")
                 li.header-menu__list-item.make-bold

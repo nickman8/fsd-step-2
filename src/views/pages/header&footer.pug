@@ -1,5 +1,6 @@
 extends ../templates/_template.pug
 include ../components/header__menu/header.pug
+include ../components/footer/footer.pug
 
 block content    
     .container
@@ -7,3 +8,5 @@ block content
             +menu(false)
         .menu   
             +menu(true)
+        .menu
+            +footer()
