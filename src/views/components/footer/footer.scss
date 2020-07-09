@@ -6,8 +6,52 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     padding-right: 140px;
     padding-left: 140px;
+    padding-top: 100px;
+    justify-content: space-between;
+
+    &__first-left{
+        //flex-shrink: 25;
+        width: 260px;
+        &_text{
+            display: block;
+            margin-top: 20px;
+        }
+        
+    }
+
+    &__second-left{
+        width: 143px;
+        .make-bold{
+            margin-bottom: 21px;
+        }        
+    }
+
+    &__middle{
+        width: 108px;
+        .make-bold{
+            margin-bottom: 21px;
+        } 
+    }
+
+    &__first-right{
+        width: 149px;
+        .make-bold{
+            margin-bottom: 21px;
+        } 
+    }
+
+    &__second-right{
+        width: 260px;
+        .make-bold{
+            margin-bottom: 21px;
+        } 
+    }
 
     &-link{
         display: block;
+        margin-bottom: 20px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+        
     }
 }
