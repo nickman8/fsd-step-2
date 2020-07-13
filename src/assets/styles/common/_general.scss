@@ -45,6 +45,10 @@ span{
   color: rgba(31, 32, 65, 0.75)
 }
 
+.db{
+  display: block;
+}
+
 h1{  
   @include fontMaker(24px,30px)
 }
