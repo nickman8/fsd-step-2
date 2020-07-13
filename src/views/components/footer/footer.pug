@@ -33,11 +33,23 @@ mixin footer()
 
 //- Потом переименовать
 
-mixin footer-min()
-    .footer-min
-        span.footer-min__copyright Copyright © 2018 Toxin отель. Все права зачищены.
-        .footer-min__icons
+mixin icons()
+    .footer-min__icons
             i.fa.fa-twitter.footer-min__icons_icon.fa-lg
             i.fa.fa-facebook-official.footer-min__icons_icon.fa-lg  
             i.fa.fa-instagram.footer-min__icons_icon.fa-lg  
-            
+
+mixin footer-min()
+    .footer-min
+        span.footer-min__copyright Copyright © 2018 Toxin отель. Все права зачищены.
+        +icons()
+
+mixin footer-sqr()
+    .footer-sqr
+        .footer-sqr__elems
+            .footer-sqr__elems_elem1
+                +logo()
+            .footer-sqr__elems_elem2
+                span Copyright © 2018 Toxin отель. Все права зачищены.
+            .footer-sqr__elems_elem3    
+                +icons()
