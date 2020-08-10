@@ -7,9 +7,27 @@
       input {
         width: 275.74px;
         border-right: none;
+
         &::placeholder {
-            color: rgba(31, 32, 65, 0.75);
-          }
+          color: rgba(31, 32, 65, 0.75);
+        }
+      }
+
+    }
+
+    &_3 {
+      form {
+        input {
+          width: 106px;
+        }
+      }
+    }
+
+    &_2 {
+      form {
+        input {
+          width: 222px;
+        }
       }
     }
   }
@@ -36,8 +54,14 @@
       height: 44px;
       border: 1px solid rgba(31, 32, 65, 0.25);
       border-left: none;
-      .fa{
+
+      .fa {
         color: rgba(31, 32, 65, 0.5);
+
+      }
+      &_color{
+        color:  #BC9CFF !important;
+    //background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
       }
     }
 
@@ -50,6 +74,7 @@
 
       &::placeholder {
         color: rgba(31, 32, 65, 0.25);
+        font-size: 14px;
       }
 
       &:hover,
@@ -71,10 +96,15 @@
     &__noHover {
       input {
         border: 1px solid rgba(31, 32, 65, 0.5);
-
         &::placeholder {
           color: rgba(31, 32, 65, 0.75);
         }
+      }
+    }
+
+    &__noBorder {
+      input {
+        border-right: none
       }
     }
   }

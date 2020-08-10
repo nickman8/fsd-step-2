@@ -1,18 +1,25 @@
 //- status - текст слева справа над полем для ввода
+ statusBool - нужно ли поле status
  text - текст который будет в placeholde
  hover - будет ли срабатывать изменение внешнего вида при наведении
  dropdown - будет ли стрелочка для выпадающегося списка
  read - можно ли изменять текст
  fieldLabel - название поля слева справа
+ size - размер поля. 1 -стандарт 2-средняя 3 - самая меленькая
+ arrow - стрелка для поля с EMail
 
-mixin text_field(status, text ="Email", hover = true, dropdown= false, read = false, fieldLabel = "TEXT FIELD")
-    .text_field(class = dropdown ? "text_field_dropdown-size": "")
+mixin text_field(status="DEFULT", text ="Email", hover = true, dropdown= false, read = false, fieldLabel = "TEXT FIELD",inputType = "email", statusBool = true, size = 1, arrow = false, valueInput = "")
+    .text_field(class = dropdown ? "text_field_dropdown-size": "", class = size == 3 ? "text_field_dropdown-size_3":"", class = size == 2 ? "text_field_dropdown-size_2":"")
         .text_field__labels
             h3=fieldLabel
-            span.text_field__labels_right=status
-        form.text_field_form(class = hover ? "": "text_field_form__noHover")
-            input(type="email" name="email" placeholder=text readonly=read )
+            if statusBool
+                span.text_field__labels_right=status
+        form.text_field_form(class = hover ? "": "text_field_form__noHover", class = arrow ? "text_field_form__noBorder":"")
+            input(type=inputType name=inputType placeholder=text readonly=read value = valueInput )
             if dropdown
                 .text_field_form_arrow 
                     i.fa.fa-chevron-down
+            if arrow
+                .text_field_form_arrow 
+                    i.fa.fa-arrow-right.text_field_form_arrow_color
                     
