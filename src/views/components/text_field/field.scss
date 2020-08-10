@@ -7,6 +7,9 @@
       input {
         width: 275.74px;
         border-right: none;
+        &::placeholder {
+            color: rgba(31, 32, 65, 0.75);
+          }
       }
     }
   }
@@ -26,11 +29,16 @@
     display: flex;
 
     &_arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 44px;
       height: 44px;
       border: 1px solid rgba(31, 32, 65, 0.25);
-      
-      border-left:none;
+      border-left: none;
+      .fa{
+        color: rgba(31, 32, 65, 0.5);
+      }
     }
 
     input {
@@ -67,9 +75,7 @@
         &::placeholder {
           color: rgba(31, 32, 65, 0.75);
         }
-
       }
-
     }
   }
 }

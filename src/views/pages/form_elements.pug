@@ -4,6 +4,6 @@ include ../components/text_field/field.pug
 block content
     .test
         +text_field("DEFULT")
-        +text_field(" HOVER / FOCUS", "This is pretty awesome", false) 
-        +text_field(" HOVER / FOCUS", "This is pretty awesome", true, true, true) 
+        +text_field(" HOVER / FOCUS","This is pretty awesome",hover= false) 
+        +text_field(" DROPDOWN", "Сколько гостей",hover=true, dropdown=true, read =true, fieldLabel= "DROPDOWN") 
         
