@@ -1,0 +1,16 @@
+//- status - текст слева справа над полем для ввода
+ text - текст который будет в placeholde
+ hover - будет ли срабатывать изменение внешнего вида при наведении
+ dropdown - будет ли стрелочка для выпадающегося списка
+ read - можно ли изменять текст
+
+mixin text_field(status, text ="Email", hover = true, dropdown= false, read = false)
+    .text_field(class = dropdown ? "text_field_dropdown-size": "")
+        .text_field__labels
+            h3 TEXT FIELD
+            span.text_field__labels_right=status
+        form.text_field_form(class = hover ? "": "text_field_form__noHover")
+            input(type="email" name="email" placeholder=text readonly=read )
+            if dropdown
+                .text_field_form_arrow 
+                    i(class = "fas fa-chevron-down")

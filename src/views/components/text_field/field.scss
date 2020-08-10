@@ -1,0 +1,75 @@
+.text_field {
+  width: 320px;
+  height: 67px;
+
+  &_dropdown-size {
+    form {
+      input {
+        width: 275.74px;
+        border-right: none;
+      }
+    }
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+
+    &_right {
+      font-size: 12px;
+    }
+
+    margin-bottom: 5px;
+  }
+
+  &_form {
+    display: flex;
+
+    &_arrow {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      
+      border-left:none;
+    }
+
+    input {
+      width: 320px;
+      height: 44px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      padding-left: 15px;
+      margin-left: 8px;
+
+      &::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+      }
+
+      &:hover,
+      &:focus {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+
+        &::-webkit-input-placeholder {
+          color: rgba(31, 32, 65, 0.75);
+          ;
+        }
+
+        &::-moz-placeholder {
+          color: rgba(31, 32, 65, 0.75);
+          ;
+        }
+      }
+    }
+
+    &__noHover {
+      input {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+
+        &::placeholder {
+          color: rgba(31, 32, 65, 0.75);
+        }
+
+      }
+
+    }
+  }
+}
