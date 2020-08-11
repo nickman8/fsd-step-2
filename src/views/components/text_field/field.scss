@@ -1,6 +1,6 @@
 .text_field {
   width: 320px;
-  height: 67px;
+  height: 63px;
 
   &_dropdown-size {
     form {
@@ -24,6 +24,8 @@
     }
 
     &_2 {
+      width: 266px;
+
       form {
         input {
           width: 222px;
@@ -59,9 +61,10 @@
         color: rgba(31, 32, 65, 0.5);
 
       }
-      &_color{
-        color:  #BC9CFF !important;
-    //background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
+
+      &_color {
+        color: #BC9CFF !important;
+        //background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
       }
     }
 
@@ -70,7 +73,6 @@
       height: 44px;
       border: 1px solid rgba(31, 32, 65, 0.25);
       padding-left: 15px;
-      margin-left: 8px;
 
       &::placeholder {
         color: rgba(31, 32, 65, 0.25);
@@ -96,6 +98,7 @@
     &__noHover {
       input {
         border: 1px solid rgba(31, 32, 65, 0.5);
+
         &::placeholder {
           color: rgba(31, 32, 65, 0.75);
         }
@@ -107,5 +110,58 @@
         border-right: none
       }
     }
+  }
+}
+
+.dropdown {
+  position: relative;
+  z-index: 22222;
+  height: 119px;
+  width: 266px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  padding-top: 7px;
+  padding-left: 15px;
+
+  &_elem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7.56px;
+
+    &__right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+
+
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &_circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    margin-left: 9px;
+    cursor: pointer;
+
   }
 }

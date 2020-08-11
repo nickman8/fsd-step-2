@@ -11,5 +11,6 @@
 import "styles/_index.scss";
 
 window.onload = function () {
-  require("scripts/data");
+  require("scripts/demo")
+ 
 };
