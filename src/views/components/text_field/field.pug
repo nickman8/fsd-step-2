@@ -23,27 +23,3 @@ mixin text_field(status="DEFULT", text ="Email", hover = true, dropdown= false, 
                 .text_field_form_arrow 
                     i.fa.fa-arrow-right.text_field_form_arrow_color
                     
-mixin dropdown(first, second, third)
-    .dropdown
-        .dropdown_elem
-            .dropdown_elem__left
-                span.dropdown_elem__text=first
-            .dropdown_elem__right
-                .dropdown_circle -
-                span.dropdown_elem__text 2
-                .dropdown_circle +
-        .dropdown_elem
-            .dropdown_elem__left
-                span.dropdown_elem__text=second
-            .dropdown_elem__right
-                .dropdown_circle -
-                span.dropdown_elem__text 2
-                .dropdown_circle +
-        .dropdown_elem
-            .dropdown_elem__left
-                span.dropdown_elem__text=third
-            .dropdown_elem__right
-                .dropdown_circle -
-                span.dropdown_elem__text 0
-                .dropdown_circle +
-

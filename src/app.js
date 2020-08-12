@@ -11,6 +11,7 @@
 import "styles/_index.scss";
 
 window.onload = function () {
-  require("scripts/demo")
+  require("scripts/demo");
+  require("./views/components/dropdown/dropdown")
  
 };

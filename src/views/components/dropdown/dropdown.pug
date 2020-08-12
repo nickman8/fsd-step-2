@@ -1,0 +1,24 @@
+mixin dropdown(first, second, third)
+    .dropdown
+        .dropdown_elem
+            .dropdown_elem__left
+                span.dropdown_elem__text=first
+            .dropdown_elem__right
+                .dropdown_circle(data="dropdown1") -
+                span.dropdown_elem__text 2
+                .dropdown_circle(data="dropdown1") +
+        .dropdown_elem
+            .dropdown_elem__left
+                span.dropdown_elem__text=second
+            .dropdown_elem__right
+                .dropdown_circle(data="dropdown2") -
+                span.dropdown_elem__text 2
+                .dropdown_circle(data="dropdown2") +
+        .dropdown_elem
+            .dropdown_elem__left
+                span.dropdown_elem__text=third
+            .dropdown_elem__right
+                .dropdown_circle(data="dropdown3") -
+                span.dropdown_elem__text 0
+                .dropdown_circle(data="dropdown3") +
+
