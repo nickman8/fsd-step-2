@@ -1,4 +1,6 @@
-console.log("111");
+$(".text_field_form_arrow").click(function (e){
+    console.log($(this).parent().parent().next().toggleClass("dropdown_noVision"))
+})
 
 
 

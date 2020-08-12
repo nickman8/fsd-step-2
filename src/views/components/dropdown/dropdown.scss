@@ -8,6 +8,9 @@
     padding-top: 7px;
     padding-left: 15px;
   
+    &_noVision{
+      display: none;
+    }
     &_elem {
       display: flex;
       justify-content: space-between;

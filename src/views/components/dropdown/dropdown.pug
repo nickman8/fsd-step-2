@@ -1,5 +1,5 @@
-mixin dropdown(first, second, third)
-    .dropdown
+mixin dropdown(first, second, third, classAtr ="")
+    .dropdown(class = classAtr)
         .dropdown_elem
             .dropdown_elem__left
                 span.dropdown_elem__text=first
